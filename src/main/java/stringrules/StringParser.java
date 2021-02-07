@@ -21,6 +21,8 @@ public class StringParser {
 				result += "Bar";
 			} else if (StringUtils.is7(c)) {
 				result += "Qix";
+			} else if (StringUtils.is0(c)) {
+				result += "*";
 			}
 		}
 		return result;

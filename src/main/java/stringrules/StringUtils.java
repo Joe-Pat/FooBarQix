@@ -32,4 +32,13 @@ public class StringUtils {
 	public static Boolean is7(char c) {
 		return c == '7';
 	}
+	
+	/** 
+	 * Checks if the character in parameters is equal to 0.
+	 * @param the character
+	 * @return Boolean.TRUE or Boolean.FALSE
+	 */
+	public static Boolean is0(char c) {
+		return c == '0';
+	}
 }
