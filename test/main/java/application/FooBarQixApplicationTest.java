@@ -20,6 +20,9 @@ public class FooBarQixApplicationTest {
 		Method method = fbqApp.getClass().getDeclaredMethod("compute", cArg);
 		method.setAccessible(true);
 		assertEquals("FooBar", method.invoke(fbqApp, "51"));
+		assertEquals("FooQix*FooBar", method.invoke(fbqApp, "03549"));
+		assertEquals("FooFooFoo", method.invoke(fbqApp, "33"));
+		assertEquals("FooBarBar", method.invoke(fbqApp, "15"));
 		assertNotEquals("Bar", method.invoke(fbqApp, "51"));
 	}
 }
